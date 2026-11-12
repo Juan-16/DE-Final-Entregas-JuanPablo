@@ -10,6 +10,6 @@ la proyección no crea archivos ni garantiza que haya datos, solo define dónde 
 
 ## 2. Si se subiera un archivo para el 4 de octubre manteniendo la configuración actual, ¿qué resultado se esperaría y qué se debería modificar para incluirlo?
 
-el archivo quedaría guardado en `s3://<bucket>/entregas/fecha=2026-10-04/entregas.csv`, pero Athena no lo mostraría. El rango proyectado termina en 2026-10-03, así que Athena nunca genera el valor 2026-10-04 y no lee ese prefijo:
+el archivo quedaria guardado en `s3://<bucket>/entregas/fecha=2026-10-04/entregas.csv`, pero Athena no lo mostraria porque el rango proyectado termina en 2026-10-03, por lo que Athena nunca genera el valor 2026-10-04 y no lee ese prefijo:
 
 Se debe modificar solo la regla del rango de la proyección en Terraform, ampliando la fecha final.
