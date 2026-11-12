@@ -1,0 +1,7 @@
+airflow-1  | [0m12:05:03  1 of 1 START freshness of ventas_raw.ventas .................................... [RUN]
+airflow-1  | [0m12:05:03  1 of 1 PASS freshness of ventas_raw.ventas ..................................... [[32mPASS[0m in 0.02s]
+airflow-1  | [0m12:05:03  Done.
+airflow-1  | [0m12:05:08  Done. PASS=19 WARN=0 ERROR=0 SKIP=0 TOTAL=19
+airflow-1  | [0m12:07:55  1 of 1 START freshness of ventas_raw.ventas .................................... [RUN]
+airflow-1  | [0m12:07:56  1 of 1 ERROR STALE freshness of ventas_raw.ventas .............................. [[31mERROR STALE[0m in 0.01s]
+airflow-1  | [0m12:07:56  Done.
