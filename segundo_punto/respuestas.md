@@ -1,9 +1,9 @@
 # Respuestas conceptuales
 
-## 1. ¿Por qué usar `_loaded_at` y no `fecha_venta` para este control?
+## 1. ¿Por que usar `_loaded_at` y no `fecha_venta` para este control?
 
-Porque el control quiere saber si la carga está al día, no cuándo ocurrieron las ventas.
+Porque el control quiere saber si la carga esta al dia, no cuando ocurrieron las ventas.
 
-## 2. ¿Por qué las pruebas de integridad no garantizan actualidad?
+## 2. ¿Por que las pruebas de integridad no garantizan actualidad?
 
-Porque revisan cómo son los datos presentes, no cuándo llegaron.
+Porque revisan como son los datos presentes, no cuándo llegaron.
