@@ -104,6 +104,7 @@ Todos los valores tienen un valor por defecto en `infraestructura/variables.tf`,
 Desde la raíz del repositorio:
 
 ```bash
+mkdir -p evidencias
 cd infraestructura
 terraform init
 terraform fmt -check
@@ -247,6 +248,7 @@ BUCKET=$(terraform -chdir=infraestructura output -raw bucket)
 aws s3 rm "s3://$BUCKET" --recursive
 
 # 2) Eliminar todos los recursos con Terraform y guardar la evidencia
+mkdir -p evidencias
 cd infraestructura
 terraform destroy -auto-approve -no-color 2>&1 | tee ../evidencias/eliminacion_terraform.txt
 cd ..
